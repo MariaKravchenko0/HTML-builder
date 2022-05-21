@@ -17,7 +17,7 @@ const path = require('path');
     );
 
     console.log(
-      `${file.name} - ${path.extname(file.name).slice(1)} - ${
+      `${file.name.split('.')[0]} - ${path.extname(file.name).slice(1)} - ${
         fileSize.size
       } bytes `
     );
